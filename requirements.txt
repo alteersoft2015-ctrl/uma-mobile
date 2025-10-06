@@ -1,0 +1,9 @@
+kivy==2.1.0
+paramiko==2.8.0
+buildozer
+pyjnius
+p4a
+kivy-deps.angle==0.3.2
+kivy-deps.glew==0.3.1
+kivy-deps.sdl2==0.4.5
+python-for-android==2023.6.13

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.briefcase]
+project_name = "UMA Mobile"
+bundle = "com.example.uma"
+version = "1.0.0"
+url = "https://example.com/uma"
+license = "MIT"
+author = "UMA Team"
+author_email = "info@uma.com"
+
+[tool.briefcase.app.uma_mobile]
+formal_name = "UMA Mobile"
+description = "UMA MikroTik User Manager Mobile App"
+sources = ["uma_mobile"]
+requires = [
+    "toga",
+    "paramiko",
+]
+
+[tool.briefcase.app.uma_mobile.android]
+base_theme = "Theme.MaterialComponents.Light.DarkActionBar"
+
+[tool.briefcase.app.uma_mobile.iOS]
